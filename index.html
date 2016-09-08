@@ -35,9 +35,9 @@
 
 <div id="impress" data-transition-duration="500">
 
-  <section id="title">
+  <section id="part1">
 
-    <article class="title">
+    <article class="part1">
       <h1 class="try">Intro to JavaScript</h1>
       <p class="footnote">
       <center> Part 1 </center>
@@ -321,6 +321,178 @@ if (bananas >=2 && bananas <7) {
     <article class="coding">
       <h1>Coding Time</h1>
     </article>
+  </section>
+
+
+  <section id="part2">
+
+    <article class="part2">
+      <h1 class="try">Intro to JavaScript</h1>
+      <p class="footnote">
+      <center> Part 2 </center>
+      </p>
+    </article>
+
+  </section>
+
+
+  <section id="arrays">
+
+    <article class="arrays">
+      <h1 class="try">Arrays</h1>
+      <p class="footnote">
+      <center> It is ordered lists of values </center>
+      </p>
+    </article>
+
+    <article class="">
+      <h1>Creating Arrays</h1>
+      <script data-lang="javascript">
+        var arrayName = [element1, element2,...];
+      </script>
+      <center>You can put different types of data into an array</center>
+      <script data-lang="javascript">
+        var myFavoriteThings = ['Watermelon', 42, 'Belgium'];
+var lotteryNumbers = [30, 65, 93, 4];
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Array Length</h1>
+      <center>The length property tells you how many things are in an array</center>
+      <script data-lang="javascript">
+        var rainbowColors = ['Red', 'Green', 'Blue',
+'Yellow', 'Orange', 'Indigo', 'Violet'];
+console.log(rainbowColors.length);
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Using Arrays</h1>
+      <center>You can access items with "bracket notation" by using the position of the element you want </center>
+      <script data-lang="javascript">
+        var rainbowColors = ['Red', 'Green', 'Blue',
+'Yellow', 'Orange', 'Indigo', 'Violet'];
+var firstColor = rainbowColors[0];
+var lastColor = rainbowColors[6];
+      </script>
+      <center>Important! Programmers start counting at zero.</center>
+    </article>
+
+    <article class="">
+      <h1>Changing Arrays</h1>
+      <center>You can use bracket notation to change an item in an array </center>
+      <script data-lang="javascript">
+        var myFavoriteThings = ['Watermelon', 42, 'Belgium'];
+myFavoriteThings[0] = 'Cherries';
+console.log(myFavoriteThings);
+//What is logged to the console?
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Expanding Arrays</h1>
+      <center>Arrays do not have a fixed length. You can use "push" to add something to an array </center>
+      <script data-lang="javascript">
+        var myFavoriteThings = ['Watermelon', 42, 'Belgium'];
+myFavoriteThings.push('Sci-fi');
+console.log(myFavoriteThings);
+//What is logged to the console?
+      </script>
+    </article>
+
+  </section>
+
+
+  <section id="loops">
+    <article class="loops">
+      <h1 class="try">Loops</h1>
+      <p class="footnote">
+      <center> We need loops when we want to repeat some action over and over again </center>
+      </p>
+    </article>
+
+    <article class="">
+      <h1>While Loops</h1>
+      <center>'While' will repeat the same code over and over until some condition is met </center>
+      <script data-lang="javascript">
+        var bottlesOfBeer = 99;
+while (bottlesOfBeer >= 1) {
+  console.log (bottlesOfBeer + ' bottles of beer on the wall');
+  bottlesOfBeer = bottlesOfBeer - 9;
+}
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Infinite Loops</h1>
+      <center>Make sure something changes in the loop and you have a condition, or your loop will go on forever... </center>
+    </article>
+
+    <article class="">
+      <h1>For Loops</h1>
+      <center>'For' loops are very similar, but you declare a counter in the statement </center>
+      <script data-lang="javascript">
+for (var i = 1; i <= 10; i++) {
+  console.log (i);
+} //will count 1 to 10
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Iterating Through Arrays</h1>
+      <center>Use a for loop to easily process each item in an array </center>
+      <script data-lang="javascript">
+        var rainbowColors = ['Red', 'Orange', 'Yellow',
+          'Green', 'Blue', 'Indigo', 'Violet'];
+        for (var i = 0; i < rainbowColors.length; i++) {
+          console.log(rainbowColors[i]);
+        }
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Break</h1>
+      <center>To exit a loop, use the break statement </center>
+      <script data-lang="javascript">
+for (var i = 100; i <= 200; i++) {
+  console.log('Testing ' + i);
+  //Stop at the first multiple of 7
+  if (i % 7 == 0) {
+     console.log('Found it! ' + i);
+     break;
+  }
+} //Count from 100 to 200
+      </script>
+    </article>
+
+  </section>
+
+
+  <section id="dom">
+    <article class="dom">
+      <h1 class="try">DOM</h1>
+      <p class="footnote">
+      <center> </center>
+      </p>
+    </article>
+
+  </section>
+
+
+  <section id="events">
+    <article class="events">
+      <h1 class="try">Events</h1>
+      <p class="footnote">
+      <center> An 'event' is a type of object that is created when the user interacts with a web page. For example, JS creates an event when a user clicks an element. </center>
+      </p>
+      <script data-lang="javascript">
+        element.onclick = function () {
+//code to execute when the click happens
+};
+      </script>
+    </article>
+
   </section>
 
 
