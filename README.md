@@ -3,3 +3,5 @@
 Intro to JavaScript slides Part 1 for NodeGirls Sydney events.
 
 Quick intro to variables, comments, functions, if/else statements.
+
+https://butenkot.github.io/js-basics-slides/

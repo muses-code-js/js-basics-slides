@@ -446,7 +446,7 @@ a:focus {
 .impress-enabled pre {
   max-height: 80%;
   overflow-y: auto;
-  font-size: 0.6em;
+  font-size: .9em;
 }
 
 .impress-enabled pre code {
@@ -454,7 +454,7 @@ a:focus {
   font-size: 0.8em;
   line-height: 1.2em;
   max-height: 90%;
-  min-height: 24em;
+  min-height: 1.2em;
 
   overflow-x: auto;
 }

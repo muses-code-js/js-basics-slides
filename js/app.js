@@ -63,9 +63,7 @@
   document.body.addEventListener("impress:stepenter", event => {
     return $$(event.target)('script[data-lang]')
       .map(processScript)
-      .forEach(($code, index) =>
-        typeText([event.target.id, index].join('-'), $code, () =>
-          hljs.highlightBlock($code)));
+      .forEach($code => hljs.highlightBlock($code));
   }, false);
 
 

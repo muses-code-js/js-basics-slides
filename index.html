@@ -40,7 +40,7 @@
     <article class="title">
       <h1 class="try">Intro to JavaScript</h1>
       <p class="footnote">
-      <center> Part 1</center>
+      <center> Part 1 </center>
       </p>
     </article>
 
@@ -57,30 +57,46 @@
     </article>
 
     <article class="">
-      <h1>Naming variables</h1>
-        <ul>
-          <li>The variable name is case-sensitive.</li>
-          <li>A new variable needs to have a unique name</li>
-          <li>It need to start with a letter, $, or _.</li>
-          <li>It can only be made of letters, numbers, $, or _.</li>
-        </ul>
+      <h1>Declaring a Variable</h1>
+      <center>
+        To declare (create) a variable, type the key-word "var" and the variable name
+      </center>
+      <script data-lang="javascript">
+        var hello;
+      </script>
     </article>
 
     <article class="">
-      <h1>Declaring a variable</h1>
+      <h1>Initializing a Variable</h1>
+      <center> To give your variable a starting value </center>
+      <script data-lang="javascript">
+        var animal = 'cat';
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Using a Variable</h1>
+      <center>Once you have created a variable, you can use it in your code. Just type the name of the variable.</center>
+      <script data-lang="javascript">
+        var greeting = 'Hello Node Girls!';
+      </script>
+      <script data-lang="javascript">
+        console.log(greeting);
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Naming Variables</h1>
       <ul>
-        <li>To declare (create) a variable, just type the word "var" and the variable name.</li>
-        <li>It is a good idea to give your variable a starting value. This is called initializing the variable.</li>
+        <li>The variable name is case-sensitive.</li>
+        <li>A new variable needs to have a unique name</li>
+        <li>It need to start with a letter, $, or _.</li>
+        <li>It can only be made of letters, numbers, $, or _.</li>
       </ul>
     </article>
 
     <article class="">
-      <h1>Using a variable</h1>
-      <center>Once you have created a variable, you can use it in your code. Just type the name of the variable.</center>
-    </article>
-
-    <article class="">
-      <h1>Variables values</h1>
+      <h1>Variables Values</h1>
       <ul>
         <li>Variables can hold different types of information, like strings, numbers, booleans etc.</li>
         <li>The value of a variable can change over time.</li>
@@ -89,20 +105,32 @@
 
     <article class="">
       <h1>String</h1>
-        <center>It is a group of characters, words, phrases. You put your string in quotes.</center>
+      <center>It is a group of characters, words, phrases. You put your string in quotes.</center>
+      <script data-lang="javascript">
+        var phrase = "I'm a string!";
+      </script>
     </article>
 
     <article class="">
       <h1>Number</h1>
       <ul>
         <li>Can be either integer or float (decimal).</li>
-        <li>You also can do math with your numbers with Arithmetical operators (+, -, /, * etc)</li>
+        <script data-lang="javascript">
+          var ourFirstNumber = 10;
+        </script>
+        <li>Also we can do math with numbers using Arithmetical Operators (+, -, /, * etc)</li>
+        <script data-lang="javascript">
+          var summ = 2 + 3;
+        </script>
       </ul>
     </article>
 
     <article class="">
       <h1>Boolean</h1>
       <center>It is a True or False value</center>
+      <script data-lang="javascript">
+        var isGrassGreen = true;
+      </script>
     </article>
 
   </section>
@@ -115,12 +143,26 @@
       <p class="footnote">
       <center>You can leave notes in your program that people can read and computers will ignore.</center>
       </p>
+      <script data-lang="javascript">
+        /* I'm
+  a multi-line comment
+*/
+      </script>
+      <script data-lang="javascript">
+        var food;//Inline comment
+      </script>
     </article>
 
     <article class="">
-      <h1>Getting results</h1>
-      <center>open a pop-up box</center>
+      <h1>Getting Results</h1>
+      <center>Open a pop-up box</center>
+      <script data-lang="javascript">
+          alert('Hello World!');
+      </script>
       <center>Display a message in your console</center>
+      <script data-lang="javascript">
+        console.log('Hi girls.');
+      </script>
     </article>
 
   </section>
@@ -133,17 +175,152 @@
       <center>It is a separable, reusable piece of code that takes some input (argument) do some changes to it and return result.</center>
     </article>
 
+    <article class="">
+      <h1>Declare a Function</h1>
+      <center>Create a function in other words</center>
+      <script data-lang="javascript">
+        function alertHello(){
+  alert('Hello again!')
+};
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Use a Function</h1>
+      <script data-lang="javascript">
+        alertHello();
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Arguments</h1>
+      <center>Function can accept input values, called arguments</center>
+      <script data-lang="javascript">
+        function whatIsYourName(name){
+    console.log('My name is ' + name);
+};
+whatIsYourName('Tanya');
+//output - 'My name is Tanya'
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Returning Values</h1>
+      <center>You can make function return value that you can use later</center>
+      <script data-lang="javascript">
+        function square(num){
+    return num * num;
+};
+var squareOfFive = square(5);
+//squareOfFive will be equal to 25
+      </script>
+      <center>Return will end a function</center>
+    </article>
+
+    <article class="">
+      <h1>Scope</h1>
+      <center>Global scope</center>
+      <center>Local scope</center>
+    </article>
+
   </section>
 
 
   <section id="if-else">
 
     <article class="if-else">
-      <h1>If/else statements</h1>
-      <center></center>
-      <center></center>
+      <h1>If/else Statements</h1>
     </article>
 
+    <article class="">
+      <h1>The 'if' Statement</h1>
+      <center>Use if to decide which lines of code to execute, based on a condition</center>
+      <script data-lang="javascript">
+        if (condition) {
+  // statements to execute
+}
+      </script>
+      <script data-lang="javascript">
+        var bananas = 5;
+if (bananas > 0) {
+   console.log ('You have some bananas!');
+}
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Comparison Operators</h1>
+      <script data-lang="javascript">
+        a == b       a === b
+a != b       a !== b
+a < b
+a > b
+a <= b
+a => b
+      </script>
+      <center>Watch out '=' and '==' are different!</center>
+    </article>
+
+    <article class="">
+      <h1>The 'if/else' Statement</h1>
+      <center>Use else to provide an alternate set of instructions</center>
+      <script data-lang="javascript">
+        var num = 5;
+if (num > 5) {
+  console.log ('Num is bigger then 5');
+} else {
+  console.log('Num is smaller then 5');
+}
+      </script>
+    </article>
+
+    <article class="">
+      <h1>The 'if/else if/else' Statement</h1>
+      <center>If you have multiple conditions, you can use 'else if'</center>
+      <script data-lang="javascript">
+        var num = 5;
+if (num > 5) {
+  console.log ('Num is bigger then 5');
+} else if (num < 5) {
+  console.log('Num is smaller then 5');
+} else {
+  console.log('Num is equal to 5');
+}
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Logical Operators</h1>
+      <center>If you have multiple conditions, you can use 'else if'</center>
+      <script data-lang="javascript">
+        Example  Name  Result
+------------------------------------
+a && b   AND   TRUE if a and b true
+a || b   OR    TRUE if a or b true
+!a       NOT   TRUE if a is not true
+      </script>
+    </article>
+
+    <article class="">
+      <h1>Using Logical Operators</h1>
+      <center>You can use these operators to combine conditions</center>
+      <script data-lang="javascript">
+        var bananas = 5;
+if (bananas >=2 && bananas <7) {
+  console.log ('You have a reasonable number of bananas');
+} else {
+  console.log ('Check your banana supply');
+}
+      </script>
+    </article>
+
+  </section>
+
+
+  <section id="coding">
+    <article class="coding">
+      <h1>Coding Time</h1>
+    </article>
   </section>
 
 
