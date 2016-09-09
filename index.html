@@ -444,10 +444,10 @@ for (var i = 1; i <= 10; i++) {
       <center>Use a for loop to easily process each item in an array </center>
       <script data-lang="javascript">
         var rainbowColors = ['Red', 'Orange', 'Yellow',
-          'Green', 'Blue', 'Indigo', 'Violet'];
-        for (var i = 0; i < rainbowColors.length; i++) {
-          console.log(rainbowColors[i]);
-        }
+'Green', 'Blue', 'Indigo', 'Violet'];
+for (var i = 0; i < rainbowColors.length; i++) {
+  console.log(rainbowColors[i]);
+}
       </script>
     </article>
 
@@ -469,12 +469,98 @@ for (var i = 100; i <= 200; i++) {
   </section>
 
 
+  <section id="html">
+    <article class="html">
+      <h1 class="try">HTML</h1>
+      <p class="footnote">
+      <center> Hyper Text Markup Language. It is a structure of the elements on the page. </center>
+      </p>
+      <script data-lang="html">
+        <!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <p class="greeting">Hello World!</p>
+    <p>My name is Tanya.</p>
+  </body>
+</html>
+      </script>
+    </article>
+  </section>
+
+
+  <section id="css">
+    <article class="css">
+      <h1 class="try">CSS</h1>
+      <p class="footnote">
+      <center>Stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen </center>
+      </p>
+      <script data-lang="css">
+        p {
+  color: green;
+  font-size: 14px;
+}
+.greeting {
+  color: red;
+  font-size: 20px;
+}
+      </script>
+    </article>
+  </section>
+
+
   <section id="dom">
     <article class="dom">
       <h1 class="try">DOM</h1>
       <p class="footnote">
-      <center> </center>
+      <center>Stands for Document Object Model. It defines the logical structure of documents and the way a document is accessed and manipulated </center>
       </p>
+    </article>
+
+    <article class="">
+      <h1>The DOM: sample model</h1>
+      <img src="img/dom-structure.png" alt="" width="">
+    </article>
+
+    <article class="">
+      <h1>DOM Access</h1>
+      <center>To change the page</center>
+      <ol>
+        <li>Find the DOM element (node) and store it in a variable</li>
+        <li>Use methods to manipulate the node</li>
+      </ol>
+    </article>
+
+    <article class="">
+      <h1>DOM Access</h1>
+      <center>QuerySelector</center>
+      <script data-lang="javascript">
+        document.querySelector(cssQuery);
+      </script>
+      <center>To find:</center>
+      <script data-lang="html">
+        <img class="kittenPic" src="img/kitten.jpg" alt="cat"/>
+      </script>
+      <center>We would do:</center>
+      <script data-lang="javascript">
+        var imgKitten = document.querySelector('.kittenPic');
+      </script>
+    </article>
+
+    <article class="">
+      <h1>DOM: innerHTML</h1>
+      <center>Each DOM node has an innerHTML property with the HTML of all its children. You can use the property to view or change the HTML of a node.
+        For example, you can overwrite text in the particular tag:</center>
+      <script data-lang="html">
+        <p id="warning"></p>
+      </script>
+      <script data-lang="javascript">
+        var warningParagraph = document.querySelector('#warning');
+warningParagraph.innerHTML = 'Danger High Voltage!';
+      </script>
     </article>
 
   </section>
@@ -489,6 +575,42 @@ for (var i = 100; i <= 200; i++) {
       <script data-lang="javascript">
         element.onclick = function () {
 //code to execute when the click happens
+};
+      </script>
+    </article>
+
+    <article class="">
+      <h1 class="try">Calling Functions From HTML</h1>
+      <script data-lang="html">
+        <button id="clickMe" onclick="sayHi()">Click Me!</button>
+      </script>
+      <script data-lang="javascript">
+        function sayHi() {
+  alert ('Hi!');
+};
+      </script>
+    </article>
+
+    <article class="">
+      <h1 class="try">Listening Functions</h1>
+      <center>First, find the object:</center>
+      <script data-lang="javascript">
+        var myTarget = document.querySelector('#clickMe');
+      </script>
+      <center>Then add an event to that object:</center>
+      <script data-lang="javascript">
+        myTarget.onclick = function(){
+  alert ('Hi!');
+};
+      </script>
+    </article>
+
+    <article class="">
+      <h1 class="try">Preventing Defaults</h1>
+      <center>Elements like buttons and links have a default behaviors. However, the event objects has a built-in method to handle that:</center>
+      <script data-lang="javascript">
+        element.onclick = function (event) {
+  event.preventDefault();
 };
       </script>
     </article>
